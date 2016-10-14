@@ -14,9 +14,13 @@ namespace Challenge4_Column
             {
                 int number;
                 if (int.TryParse(args[0], out number))
+                {
                     Console.WriteLine(ConvertToColumnName(number));
+                }
                 else
+                {
                     Console.WriteLine(ConvertToColumnNumber(args[0].ToUpper()));
+                }
             }
         }
 
