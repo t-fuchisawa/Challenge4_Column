@@ -7,6 +7,9 @@ namespace UnitTestProject1
     [TestClass]
     public class UnitTest1
     {
+        /// <summary>
+        /// テスト：数値をExcelの列名(ローマ字)に変換
+        /// </summary>
         [TestMethod]
         public void TestMethod1()
         {
@@ -19,6 +22,9 @@ namespace UnitTestProject1
             Assert.AreEqual(Program.ConvertToColumnName(2147483647), "FXSHRXW");
         }
 
+        /// <summary>
+        /// テスト：Excelの列名(ローマ字)を数値に変換
+        /// </summary>
         [TestMethod]
         public void TestMethod2()
         {
